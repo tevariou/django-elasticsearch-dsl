@@ -73,18 +73,22 @@ def make_parser():
     parser.add_argument(
         '--elasticsearch',
         nargs='?',
-        metavar='localhost:9200',
-        const='localhost:9200',
+        metavar='https://127.0.0.1:9200',
+        const='https://127.0.0.1:9200',
         help="To run integration test against an Elasticsearch server",
     )
     parser.add_argument(
         '--elasticsearch-username',
         nargs='?',
+        metavar='elastic',
+        const='elastic',
         help="Username for Elasticsearch user"
     )
     parser.add_argument(
         '--elasticsearch-password',
         nargs='?',
+        metavar='changeme',
+        const='changeme',
         help="Password for Elasticsearch user"
     )
     parser.add_argument(
